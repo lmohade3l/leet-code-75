@@ -1,3 +1,4 @@
+// my original solution
 var isSubsequence = function (s, t) {
   if(s === "") return true;
   
@@ -16,3 +17,16 @@ var isSubsequence = function (s, t) {
   }
   return false;
 };
+
+// two pointers
+const isSubsequenceWithPointers = (s, t) => {
+  let sPointer = 0;
+  let tPointer = 0;
+
+  while (sPointer < s.length && tPointer<t.length) {
+    if(s[sPointer]===t[tPointer]) sPointer++;
+    tPointer ++;
+  }
+
+  return sPointer===s.length;
+}
