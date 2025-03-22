@@ -15,8 +15,6 @@ var maxVowels = function (s , k) {
         if(["a" , "e" , "i" , "u" , "o"].includes(s[m-1])) temp--;
         if(["a" , "e" , "i" , "u" , "o"].includes(s[n])) temp++;
 
-        console.log({temp} , {count})
-
         count = Math.max(temp , count);
 
         m++;
@@ -25,5 +23,3 @@ var maxVowels = function (s , k) {
 
     return count;
 }
-
-console.log(maxVowels("leetcode" , 3))
