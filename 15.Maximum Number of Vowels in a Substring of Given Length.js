@@ -23,3 +23,5 @@ var maxVowels = function (s , k) {
 
     return count;
 }
+
+console.log( typeof typeof Number('n/a'))
