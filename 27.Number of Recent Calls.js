@@ -1,6 +1,10 @@
-function RecentCounter() {
+// function RecentCounter() {
+//   this.requests = [];
+// }
+
+var RecentCounter = function () {
   this.requests = [];
-}
+};
 
 RecentCounter.prototype.ping = function (t) {
   this.requests.push(t);
