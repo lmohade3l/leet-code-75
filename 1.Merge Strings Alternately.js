@@ -23,3 +23,18 @@ var mergeAlternately = function (word1, word2) {
   }
   return mergeArr.join("");
 };
+
+// better solution
+const mergeStringsAlternately = (word1, word2) => {
+  let i = 0;
+  let output = "";
+
+  while (i < word1?.lenght || i < word2?.length) {
+    if (word1[i]) output += word1[i];
+    if (word2[i]) output += word2[i];
+
+    i++;
+  }
+
+  return output;
+};
